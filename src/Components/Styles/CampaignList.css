@@ -1,0 +1,20 @@
+.campaign-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .campaign-list-header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .no-campaigns {
+    text-align: center;
+    color: #666;
+    font-size: 1.2rem;
+  }
+  

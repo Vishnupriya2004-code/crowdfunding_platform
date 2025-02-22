@@ -1,0 +1,89 @@
+/* General navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between logo and other elements */
+  align-items: center;
+  background-color: #e4eaea; /* Updated background color */
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for navbar */
+ 
+}
+
+.logo {
+  font-size: 2.2rem; /* Increased font size */
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Elegant font style */
+  color: #050505; /* White color for the website name */
+}
+
+/* Wrapper to align nav-links and auth-buttons to the right */
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align everything to the right */
+  gap: 20px; /* Space between nav-links and auth-buttons */
+  width: 100%;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px; /* Spacing between links */
+  font-family: "Roboto", sans-serif;
+  margin: 0; /* Reset default margins */
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(17, 16, 16);
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: white; /* Brighter white highlight effect on hover */
+}
+
+/* Auth buttons (Login and Signup) */
+.auth-buttons {
+  display: flex;
+  gap: 15px; /* Increased spacing between buttons */
+}
+
+button {
+  border: none;
+  border-radius: 8px; /* More rounded button corners */
+  padding: 10px 18px; /* Larger padding for buttons */
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  font-family: "Roboto", sans-serif; /* Clean font for buttons */
+}
+
+.login-btn {
+  background: linear-gradient(135deg, #2cd39e70, #40e0a2);/* Deep teal for login button */
+  color: white;
+}
+
+.login-btn:hover {
+  background-color: rgb(29, 158, 180); /* Light cyan for hover */
+  color: black;
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.signup-btn {
+  background: linear-gradient(135deg, #2cd39e70, #40e0a2); /* Deep teal background for signup button */
+  color: white;
+  
+}
+
+.signup-btn:hover {
+  background-color: rgb(29, 158, 180); /* Light cyan on hover */
+  color:black;
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
