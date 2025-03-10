@@ -1,0 +1,79 @@
+.payment-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  p {
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .payment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items inside form */
+    justify-content: center; /* Center items inside form */
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height: 400px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 100%; /* Full width for alignment */
+  }
+  
+  input {
+    width: 100%; /* Make inputs full width */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .pay-button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%; /* Full-width button */
+    text-align: center;
+  }
+  
+  .pay-button:hover {
+    background-color: #218838;
+  }
+  
+  .payment-message {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #155724;
+    background-color: #d4edda;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+  }
+  

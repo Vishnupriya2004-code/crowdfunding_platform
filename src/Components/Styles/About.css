@@ -1,0 +1,119 @@
+/* General Styling */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 150vh; /* Ensures full viewport height but allows content to expand */
+  width: 100%; /* Prevents horizontal overflow */
+  background: linear-gradient(135deg, #43a390, #2dedca);
+  padding: 100px 20px 50px; /* Adjusted for navbar spacing */
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  
+   /* Allows vertical scrolling when needed */
+}
+
+/* Title Styling */
+.page-container h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+/* Paragraph Styling */
+.page-container p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Section Headings */
+.page-container h2 {
+  font-size: 2rem;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+/* List Styling */
+.page-container ul,
+.page-container ol {
+  max-width: 800px;
+  text-align: left;
+  background: rgba(23, 36, 36, 0.179);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.page-container ul li,
+.page-container ol li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  list-style: none;
+  padding-left: 25px;
+  position: relative;
+  max-width: 100%; /* Prevents content overflow */
+}
+
+/* Bullet Points Styling */
+.page-container ul li::before {
+  content: "✔";
+  color: #030303;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Ordered List Number Styling */
+.page-container ol {
+  counter-reset: section;
+}
+
+.page-container ol li::before {
+  content: counter(section) ".";
+  counter-increment: section;
+  font-weight: bold;
+  margin-right: 10px;
+  color: #040404;
+}
+
+/* Highlight Last Paragraph */
+.page-container p:last-of-type {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #052925;
+  
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-container {
+      padding: 80px 15px 30px; /* Adjusted padding for small screens */
+  }
+
+  .page-container h1 {
+      font-size: 2.4rem;
+  }
+
+  .page-container h2 {
+      font-size: 1.8rem;
+  }
+
+  .page-container p,
+  .page-container ul li,
+  .page-container ol li {
+      font-size: 1.1rem;
+  }
+
+  .page-container ul,
+  .page-container ol {
+      padding: 15px;
+  }
+}

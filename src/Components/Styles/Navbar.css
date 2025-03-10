@@ -46,7 +46,7 @@
 }
 
 .nav-links a:hover {
-  color: white; /* Brighter white highlight effect on hover */
+  color: rgb(11, 181, 178); /* Brighter white highlight effect on hover */
 }
 
 /* Auth buttons (Login and Signup) */
@@ -87,3 +87,8 @@ button {
   color:black;
   transform: scale(1.05); /* Slight zoom effect on hover */
 }
+.page-container {
+  padding: 50px;
+  text-align: center;
+}
+

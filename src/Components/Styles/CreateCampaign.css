@@ -1,48 +1,146 @@
-.create-campaign {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #ffffff;
+/* General page styling */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #1abfb7, #0fd9b4);
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 20px; /* Moves content slightly up */
+}
+.banner-image {
+  width: 80%; /* Make it full-width */
+  max-height: 300px; /* Adjust height as needed */
+  object-fit: cover; /* Ensures it scales properly */
+  margin-bottom: 20px; /* Space between banner and title */
+}
+
+
+/* Title and paragraph */
+.page-container h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.page-container p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Campaign form container */
+.campaign-form {
+  background: rgba(13, 12, 8, 0.5); /* Slightly transparent dark background */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 700px;
+  height: 600px;
+  text-align: left;
+}
+
+/* Label styling */
+.campaign-form label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #faf4f4;
+  margin-top: 15px;
+}
+
+/* Input and textarea styling */
+.campaign-form input,
+.campaign-form textarea {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.2rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: #e6eced;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Input focus effect */
+.campaign-form input:focus,
+.campaign-form textarea:focus {
+  border-color: #00bcd4;
+  box-shadow: 0 0 8px rgba(0, 188, 212, 0.5);
+  outline: none;
+}
+
+/* Submit button */
+.submit-btn {
+  display: block;
+  width: 60%;
+  margin: 20px auto 0; /* Centers the button */
+  padding: 16px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  background: #052925;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  text-align: center;
+}
+
+/* Button hover and active effects */
+.submit-btn:hover {
+  background: #1abfb7;
+  transform: scale(1.05);
+}
+
+.submit-btn:active {
+  background: #005f6b;
+  transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .campaign-form {
+    width: 95%;
+    padding: 25px;
   }
-  
-  .create-campaign h2 {
+
+  .page-container h1 {
     font-size: 2rem;
-    margin-bottom: 15px;
-    text-align: center;
   }
-  
-  .create-campaign form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .create-campaign label {
+
+  .page-container p {
     font-size: 1rem;
-    color: #333;
   }
-  
-  .create-campaign input,
-  .create-campaign textarea,
-  .create-campaign button {
-    font-size: 1rem;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 100%;
+
+  .campaign-form label {
+    font-size: 1.1rem;
   }
-  
-  .create-campaign button {
-    background-color: #00bcd4;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+
+  .campaign-form input,
+  .campaign-form textarea {
+    font-size: 1.1rem;
+    padding: 12px;
   }
-  
-  .create-campaign button:hover {
-    background-color: #008c9e;
+
+  .submit-btn {
+    font-size: 1.3rem;
+    padding: 14px;
+    width: 70%; /* Slightly wider for mobile */
   }
-  
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -7,6 +7,7 @@ import pic8 from "./Styles/pic8.jpeg";
 import pic10 from "./Styles/pic10.jpeg";
 import pic11 from "./Styles/pic11.jpeg";
 import pic12 from "./Styles/pic12.jpeg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [isPopupVisible, setPopupVisible] = useState(false);
@@ -113,7 +114,9 @@ const Home = () => {
         <p>Support the creation of a hub for next-gen innovators.</p>
         <p><strong>Goal:</strong> $10,000</p>
         <p><strong>Raised:</strong> $7,500</p>
-        <button className="view-project-btn">View Project</button>
+        <Link to={`/project/tech-innovation-hub`}>
+  <button className="view-project-btn">View Project</button>
+</Link>
       </div>
       <div className="campaign-card">
       <img src={pic7} alt="Art Revival Project" />
@@ -121,7 +124,9 @@ const Home = () => {
         <p>Help preserve and promote traditional art forms.</p>
         <p><strong>Goal:</strong> $5,000</p>
         <p><strong>Raised:</strong> $3,200</p>
-        <button className="view-project-btn">View Project</button>
+        <Link to={`/project/art-revival-project`}>
+  <button className="view-project-btn">View Project</button>
+</Link>
       </div>
       <div className="campaign-card">
       <img src={pic8} alt="Eco-Friendly Housing" />
@@ -129,7 +134,9 @@ const Home = () => {
         <p>Fund sustainable and eco-friendly housing projects.</p>
         <p><strong>Goal:</strong> $20,000</p>
         <p><strong>Raised:</strong> $12,500</p>
-        <button className="view-project-btn">View Project</button>
+        <Link to={`/project/eco-friendly-housing`}>
+  <button className="view-project-btn">View Project</button>
+</Link>
       </div>
       <div className="campaign-card">
       <img src={pic10} alt="Community Education Fund" />
@@ -137,7 +144,9 @@ const Home = () => {
         <p>Support education programs in underprivileged areas.</p>
         <p><strong>Goal:</strong> $15,000</p>
         <p><strong>Raised:</strong> $9,800</p>
-        <button className="view-project-btn">View Project</button>
+        <Link to={`/project/community-education-fund`}>
+  <button className="view-project-btn">View Project</button>
+</Link>
       </div>
       <div className="campaign-card">
       <img src={pic11} alt="Wildlife Conservation" />
@@ -145,7 +154,9 @@ const Home = () => {
         <p>Help save endangered species and preserve habitats.</p>
         <p><strong>Goal:</strong> $25,000</p>
         <p><strong>Raised:</strong> $18,400</p>
-        <button className="view-project-btn">View Project</button>
+        <Link to={`/project/wildlife-conservation`}>
+  <button className="view-project-btn">View Project</button>
+</Link>
       </div>
       <div className="campaign-card">
       <img src={pic12} alt="Clean Water Initiative" />
@@ -153,7 +164,9 @@ const Home = () => {
         <p>Provide clean and safe drinking water to rural areas.</p>
         <p><strong>Goal:</strong> $12,000</p>
         <p><strong>Raised:</strong> $6,700</p>
-        <button className="view-project-btn">View Project</button>
+        <Link to={`/project/clean-water-initiative`}>
+  <button className="view-project-btn">View Project</button>
+</Link>
       </div>
     </div>
     <button
@@ -205,7 +218,75 @@ const Home = () => {
     </form>
   </div>
 
+  </section>
+{/* Blog Page */}
+<section className="blog">
+  <h2>Latest Blogs</h2>
+  <div className="blog-container">
+    <div className="blog-post">
+      <h3>How to Start a Successful Campaign</h3>
+      <p>Learn the key steps to launching a campaign that captures attention and secures funding.</p>
+      <button className="read-more">Read More</button>
+    </div>
+    <div className="blog-post">
+      <h3>Top 10 Crowdfunding Success Stories</h3>
+      <p>Discover inspiring success stories of projects that made a global impact.</p>
+      <button className="read-more">Read More</button>
+    </div>
+    <div className="blog-post">
+      <h3>Effective Marketing Strategies for Crowdfunding</h3>
+      <p>Explore marketing tactics to boost visibility and attract more backers to your campaign.</p>
+      <button className="read-more">Read More</button>
+    </div>
+    <div className="blog-post">
+      <h3>Choosing the Right Platform for Your Campaign</h3>
+      <p>Compare popular crowdfunding platforms and find the one that suits your needs.</p>
+      <button className="read-more">Read More</button>
+    </div>
+    <div className="blog-post">
+      <h3>Common Mistakes to Avoid in Crowdfunding</h3>
+      <p>Understand the pitfalls that can lead to failed campaigns and how to prevent them.</p>
+      <button className="read-more">Read More</button>
+    </div>
+    <div className="blog-post">
+      <h3>Legal and Financial Considerations in Crowdfunding</h3>
+      <p>Get insights into the legal and financial aspects to ensure compliance and transparency.</p>
+      <button className="read-more">Read More</button>
+    </div>
+  </div>
 </section>
+
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>About Us</h3>
+      <p>We provide high-quality blogs on various topics, keeping you informed and engaged with the latest trends.</p>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 YourWebsite | All Rights Reserved.
+  </div>
+</footer>
 </div>
       
   );

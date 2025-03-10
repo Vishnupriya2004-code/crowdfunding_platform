@@ -1,49 +1,37 @@
-import React, { useState } from "react";
-import "./Styles/CreateCampaign.css";
+import React from "react";
+import "./Styles/CreateCampaign.css"; 
+import banner1 from "./Styles/banner1.png";
 
-function CreateCampaign() {
-  const [form, setForm] = useState({ title: "", description: "", goal: "" });
-
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Campaign created:", form);
-  };
-
+const CreateCampaign = () => {
   return (
-    <div className="create-campaign">
-      <h2>Create a New Campaign</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="title"
-          placeholder="Campaign Title"
-          value={form.title}
-          onChange={handleChange}
-          required
-        />
-        <textarea
-          name="description"
-          placeholder="Description"
-          value={form.description}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="number"
-          name="goal"
-          placeholder="Funding Goal"
-          value={form.goal}
-          onChange={handleChange}
-          required
-        />
-        <button type="submit">Submit</button>
+    <div className="page-container">
+      {/* Banner Image */}
+      <img 
+        src={banner1} 
+        alt="Campaign Banner" 
+        className="banner-image"
+      />
+
+      <h1>Create Your Campaign</h1>
+      <p>Start your journey by filling out the details below.</p>
+      
+      <form className="campaign-form">
+        <label>Title:</label>
+        <input type="text" placeholder="Enter campaign title" required />
+
+        <label>Description:</label>
+        <textarea placeholder="Describe your campaign" required />
+
+        <label>Goal Amount:</label>
+        <input type="number" placeholder="Enter goal amount" required />
+
+        <label>Image URL:</label>
+        <input type="text" placeholder="Enter image URL (optional)" />
+
+        <button type="submit" className="submit-btn">Create Campaign</button>
       </form>
     </div>
   );
-}
+};
 
 export default CreateCampaign;
